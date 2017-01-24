@@ -11,7 +11,7 @@
         <img src="http://placehold.it/150x100" alt="Логотип">
       </div>
           <nav class="page-navigation">
-          <ul>
+          <ul class="main-navigation-board">
            <li>
              <a href="#">Информация</a>
            </li>
@@ -35,66 +35,45 @@
       </div>
     </div>
     <main class="container">
-      <h1>Средства для ухода</h1>
-      <div class="bread-crumbs">
-        <ul>
-          <li>
-            <a class="crumbs" href="#">Главная</a>
-          </li>
-          <li>
-            <a class="crumbs" href="#">Магазин</a>
-          </li>
-          <li>
-            <a class="crumbs" href="#">Средства для ухода</a>
-          </li>
+     <div class="container-item-header">
+      <h1 class="container-item-header-title">Средства для ухода</h1>
+      <div class="crumbs-lineup">
+        <ul class="breadcrumbs">
+          <li><a class="crumbs" href="#">Главная</a></li>
+          <li><a class="crumbs" href="#">Магазин</a></li>
+          <li><a class="crumbs active" href="#">Средства для ухода</a></li>
         </ul>
       </div>
       <div class="filters">
           <form action="#" method="post">
-           <h2>Производители:</h2>
-           <fieldset>
-            <label>    
+            <fieldset class="check">
+               <h2 class="filters-title">Производители:</h2>
+            <label for="production-1">Baxter of california</label>   
                 <input type="checkbox" name="production-1" value="Baxter of california">
-                Baxter of california
-            </label>
-            <label>    
+            <label for="production-2">Mr Natty</label>    
                 <input type="checkbox" name="production-2" value="Mr Natty">
-                Mr Natty
-            </label>
-            <label>    
+            <label for="production-3">Suavecito</label>    
                 <input type="checkbox" name="production-3" value="Suavecito">
-                Suavecito
-            </label>
-            <label>    
+            <label for="production-4">Malin+Goetz</label>    
                 <input type="checkbox" name="production-4" value="Malin+Goetz">
-                Malin+Goetz
-            </label>
-            <label>    
+            <label for="production-5">Murray's</label>    
                 <input type="checkbox" name="production-5" value="Murray's">
-                Murray's
-            </label>
-            <label>    
+            <label for="production-6">American crew</label>    
                 <input type="checkbox" name="production-6" value="American crew">
-                American crew
-            </label>
-            <h2>Группы товаров:</h2>
-            <label>    
-                <input type="radio" name="item-group" value="Shave-item">
-                Бритвенные пренадлежности
-            </label>
-            <label>    
-                <input type="radio" name="item-group" value="care-item">
-                Средства для ухода
-            </label>
-            <label>    
-                <input type="radio" name="item-group" value="accessories">
-                Аксессуары
-            </label>
+            </fieldset>
+            <fieldset class="radio">
+            <h2 class="filters-title">Группы товаров:</h2>
+            <label for="shave-goods">Бритвенные пренадлежности</label>    
+                <input type="radio" name="item-group" id="shave-goods" value="Shave-item">
+            <label for="care-goods">Средства для ухода</label>    
+                <input type="radio" name="item-group" id="care-goods" value="care-item">
+            <label for="accessories-goods">Аксессуары</label>    
+                <input type="radio" name="item-group" id="accessories-goods" value="accessories">
+            </fieldset>
           </form>
           <div class="show-me">
              <a href="#">Показать</a>
           </div>
-        </fieldset>
         </div>
         <div class="price-gallery">
          <div class="item-box">
