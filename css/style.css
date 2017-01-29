@@ -1,6 +1,4 @@
 body {
-  margin: 0 auto;
-  width:960px;
   font-family: PT Sans Narrow, serif;
   font-size: 14px;
   line-height: 18px;
@@ -23,7 +21,8 @@ ul {
   min-height: 70px;
 }
 .container {
-  min-width: 940px;
+  margin: 0 auto;
+  width: 940px;
   background-color: aqua;
   padding: 0 10px;
 }
