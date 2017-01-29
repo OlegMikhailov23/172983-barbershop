@@ -1,10 +1,38 @@
 body {
+  margin: 0 auto;
+  width:960px;
   font-family: PT Sans Narrow, serif;
   font-size: 14px;
   line-height: 18px;
   color:#000000;
   font-weight: bold;
   text-transform: uppercase;
+  
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.page-header {
+  min-height: 70px;
+}
+.container {
+  min-width: 940px;
+  background-color: aqua;
+  padding: 0 10px;
+}
+nav {
+  float: left;
+  min-height: 70px;
+  background-color: bisque;
+  width: 780px;
+}
+.page-header_login {
+  float: right;
+  min-height: 70px;
+  background-color: bisque;
+  width: 140px;
 }
 h1{
   font-size: 30px;
@@ -14,3 +42,90 @@ h2 {
   font-size: 24px;
   line-height: 30px;
 }
+.page-header {
+  margin-bottom: 55px;
+}
+.page-title {
+  width: 480px;
+  min-height: 70px;
+  background-color: blueviolet;
+  margin-bottom: 50px;
+}
+.filters {
+  float: left;
+  min-height: 575px;
+  width: 170px;
+  margin-right: 70px;
+  background-color: darkseagreen;
+}
+.product {
+  float:left;
+  min-height: 590px;
+  width: 700px;
+  background-color: darkolivegreen;
+  font-size: 0;
+  margin-bottom: 45px;
+}
+.product-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  min-height: 285px;
+  margin-right: 20px;
+}
+.product-box_title-category {
+  font-size: 10px;
+}
+.product-box_title-name {
+  font-size: 14px;
+}
+.product-box:nth-child(3), .product-box:nth-child(6) {
+  margin-right: 0;
+}
+.pagenation {
+  float: right;
+  width: 198px;
+  min-height: 45px;
+  margin-right: 505px;
+  margin-bottom: 50px;
+  background-color: firebrick;
+  font-size: 0;
+  padding-left: 0;
+}
+.pagenation-links_page {
+  display: inline-block;
+  margin-right: 5px;
+  width: 45px;
+  min-height: 45px;
+  font-size: 14px;
+  background-color: fuchsia;
+  text-align: left;
+}
+.pagenation-links_page:last-child {
+  margin-right: 0;
+}
+.page-footer {
+  
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.page-footer_contact {
+  margin-right: 60px;
+  min-height: 90px;
+  background-color: orange;
+  float: left;
+  width: 320px;
+}
+.page-footer_social {
+  float: left;
+  width: 180px;
+  min-height: 90px;
+  background-color: orange;
+}
+.page-footer_creators {
+  float:right;
+  width: 180px;
+  min-height: 90px;
+  background-color: orange;
+}
+
