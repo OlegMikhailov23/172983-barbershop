@@ -107,7 +107,6 @@ h2 {
   margin-right: 0;
 }
 .page-footer {
-  
   padding-top: 60px;
   padding-bottom: 40px;
 }
@@ -132,4 +131,38 @@ ul {
   margin: 0;
   padding:0;
 }
-
+.promo {
+  margin-top: 55px;
+  background-color: forestgreen;
+  width: 940px;
+  min-height: 670px;
+}
+.product-gallery_poster {
+  float: left;
+  width: 460px;
+  min-height: 498px;
+  margin-bottom: 20px;
+}
+.product-promo {
+  float: right;
+  width: 410px;
+  min-height: 600px;
+  margin-right: 10px;
+}
+.product-gallery_pagenation {
+  float:left;
+  width: 460px;
+  height: 149px;
+  font-size: 0;
+  background-color: dimgray;
+  margin-bottom: 50px;
+}
+.product-gallery_pagenation-links_pic {
+  display: inline-block;
+  margin-right: 20px;
+  width: 140px;
+  min-height: 149px;
+}
+.product-gallery_pagenation-links_pic:last-child {
+  margin-right: 0;
+}
