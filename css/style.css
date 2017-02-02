@@ -1,23 +1,49 @@
 body {
+  min-width: 1122px;
+  min-height: 1173px;
   font-family: PT Sans Narrow, serif;
   font-size: 14px;
   line-height: 18px;
-  color:#000000;
+  color: #000000;
   font-weight: bold;
   text-transform: uppercase;
 }
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
 ul {
-  list-style:none;
+  list-style: none;
   margin: 0;
-  padding:0;
+  padding: 0;
+}
+h1, h2 {
+    margin: 0;
+}
+h1{
+  font-size: 30px;
+  line-height: 42px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 30px;
 }
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
+fieldset {
+    border: 0;
+    padding: 0;
+}
 .page-header {
   min-height: 70px;
+    background-color: aqua;
 }
 .container {
   margin: 0 auto;
@@ -31,37 +57,50 @@ nav {
   background-color: bisque;
   width: 780px;
 }
-.page-header_login {
+.page-header-logo, 
+.page-header-list {
+    float: left;
+}
+.page-header-logo {
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.page-header-list {
+    padding-top: 25px;
+}
+.page-header-list-item {
+    display: inline-block;
+    margin-right: 40px;
+}
+.page-header-login {
   float: right;
   min-height: 70px;
   background-color: bisque;
   width: 140px;
-}
-h1{
-  font-size: 30px;
-  line-height: 42px;
-}
-h2 {
-  font-size: 24px;
-  line-height: 30px;
-}
-.page-header {
-  margin-bottom: 55px;
+    padding-top: 25px;
 }
 .page-title {
+    padding-top: 55px;
   width: 480px;
   min-height: 70px;
   background-color: blueviolet;
   margin-bottom: 50px;
 }
+.breadcrumbs {
+    margin-top: 20px;
+}
+.breadcrumbs-list-item {
+    display: inline-block;
+}
 .filters {
   float: left;
   min-height: 575px;
   width: 170px;
-  margin-right: 70px;
+  margin-right: 50px;
 }
 .product {
-  float:left;
+  float: right;
   min-height: 590px;
   width: 700px;
   font-size: 0;
@@ -81,7 +120,8 @@ h2 {
 .product-box_title-name {
   font-size: 14px;
 }
-.product-box:nth-child(3), .product-box:nth-child(6) {
+.product-box:nth-child(3), 
+.product-box:nth-child(6) {
   margin-right: 0;
 }
 .pagenation {
@@ -126,7 +166,7 @@ h2 {
   min-height: 90px;
 }
 ul {
-  list-style:none;
+  list-style: none;
   margin: 0;
   padding:0;
 }
